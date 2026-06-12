@@ -1,0 +1,35 @@
+# Gyrocube
+
+> **Tilt the world. Find the path.**
+
+A 3D puzzle game: rotate a transparent cube to roll a ball through the maze hidden inside it and reach the green goal. You never move the ball directly — you tilt the *whole world*, and gravity does the rest.
+
+**▶ Play:** https://andreaisabelmontana.github.io/gyrocube/
+
+## How it plays
+
+- **Drag** to rotate the cube; gravity always points *down on your screen*, so tilting redirects which way the ball rolls
+- Guide the ball through the interior corridors to the **green** goal sphere
+- Each level generates a larger maze (3³ rooms up to 6³)
+
+## How it works
+
+- The maze is carved by a **3D recursive-backtracker** on an occupancy grid, guaranteeing a path from start to goal
+- **Custom physics** — fixed gravity in screen space is transformed into the cube's local frame each frame, then integrated per-axis with grid collision and a little bounce
+- **Screen-relative rotation** — drag deltas are applied as quaternion *premultiplications*, so the controls feel identical regardless of the cube's current orientation and never gimbal-lock
+- **One merged geometry** — every wall cube is merged into a single buffer (instead of hundreds of draw calls) so loading a level doesn't hitch
+
+## Tech
+
+[Three.js](https://threejs.org) via CDN import map, with a hand-written ball integrator, maze generator, and geometry merge — no extra dependencies, no build step.
+
+```
+index.html       # import map for three
+styles.css
+src/maze3d.js     # 3D maze generation + wall test
+src/main.js       # scene, gravity/quaternion physics, level flow, controls
+```
+
+## License
+
+MIT — see [LICENSE](LICENSE).
