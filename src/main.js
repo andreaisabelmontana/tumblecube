@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { generateMaze3D } from "./maze3d.js";
 
-// Gyrocube — tilt a transparent cube to roll a ball through the maze inside it.
+// Tilt Maze — tilt a transparent cube to roll a ball through the maze inside it.
 // You never move the ball directly: you rotate the whole world, and gravity
 // (always pointing down in *screen* space) does the rest. Rotations are applied
 // as screen-relative quaternion deltas (premultiply), so dragging always feels

@@ -1,10 +1,8 @@
-# Gyrocube
+# Tilt Maze
 
-> **Tilt the world. Find the path.**
+A 3D maze puzzle: drag to rotate a transparent cube, and gravity rolls the ball through the corridors inside it toward the green goal. You tilt the cube — not the ball.
 
-A 3D puzzle game: rotate a transparent cube to roll a ball through the maze hidden inside it and reach the green goal. You never move the ball directly — you tilt the *whole world*, and gravity does the rest.
-
-**▶ Play:** https://andreaisabelmontana.github.io/gyrocube/
+**▶ Play:** https://andreaisabelmontana.github.io/tilt-maze-game/
 
 > **Not an original idea.** This recreates the concept of an existing project — I didn't invent it. I rebuilt it from scratch, my own way, out of curiosity about how it actually works (and tried to make it a little better along the way).
 
