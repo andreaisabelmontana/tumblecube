@@ -6,6 +6,8 @@ A 3D puzzle game: rotate a transparent cube to roll a ball through the maze hidd
 
 **▶ Play:** https://andreaisabelmontana.github.io/gyrocube/
 
+> **Not an original idea.** This recreates the concept of an existing project — I didn't invent it. I rebuilt it from scratch, my own way, out of curiosity about how it actually works (and tried to make it a little better along the way).
+
 ## How it plays
 
 - **Drag** to rotate the cube; gravity always points *down on your screen*, so tilting redirects which way the ball rolls
